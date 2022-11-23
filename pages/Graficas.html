@@ -13,22 +13,41 @@
     <link rel="shortcut icon" href="../assets/iconos/favicom.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
     <link href="./css/Hover-master/css/hover-min.css" rel="stylesheet" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="body">
     <header class="header">
-        <nav class="header__nav">
-            <a href="../index.html">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
                 <img class="header__logo" src="../assets/iconos/logo_hardminers.png" alt="Este es el logo">
-            </a>
-            <ul class="header__nav__menu">
-                <li class="header__nav__menu__li"><a class="hvr-underline-from-center" href="../index.html">Inicio</a></li>
-                <li class="header__nav__menu__li"><a class="hvr-underline-from-center" href="#">Graficas</a></li>
-                <li class="header__nav__menu__li"><a class="hvr-underline-from-center" href="./Asics.html">Asics</a></li>
-                <li class="header__nav__menu__li"><a class="hvr-underline-from-center" href="./Sobre nosotros.html">Sobre nosotros</a></li>
-                <li class="header__nav__menu__li"><a class="hvr-underline-from-center" href="./Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center"  href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active hvr-underline-from-center" aria-current="page" href="#">Graficas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="../pages/Asics.html">Asics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center " href="../pages/Sobre nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center " href="../pages/Contacto.html">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
     <main>
@@ -41,13 +60,13 @@
         <section class="main__graficas">
             <img class="main__graficas__imagen1" src="../assets/images/gpu imagen1.jpg" alt="">
             <ul>
-                <li class="lista"> Limpieza total del hardware</li>
-                <li class="lista"> Cambio de pasta térmica</li>
-                <li class="lista"> Cambio de Thermal Pad</li>
-                <li class="lista"> Limpieza en profundidad del PCB</li>
-                <li class="lista"> Acesoramiento en overclocking</li>
-                <li class="lista"> Reemplazo de coolers defectuosos</li>
-                <li class="lista"> Adaptacion de pads termicos de bronce (solo solo series GTX 3000)</li>
+                <li data-aos="fade-left" class="lista"> Limpieza total del hardware</li>
+                <li data-aos="fade-left" class="lista"> Cambio de pasta térmica</li>
+                <li data-aos="fade-left" class="lista"> Cambio de Thermal Pad</li>
+                <li data-aos="fade-left" class="lista"> Limpieza en profundidad del PCB</li>
+                <li data-aos="fade-left" class="lista"> Acesoramiento en overclocking</li>
+                <li data-aos="fade-left" class="lista"> Reemplazo de coolers defectuosos</li>
+                <li data-aos="fade-left" class="lista"> Adaptacion de pads termicos de bronce (solo solo series GTX 3000)</li>
             </ul>
         </section>
         
@@ -77,5 +96,12 @@
         </div>    
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+    </script>   
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>
