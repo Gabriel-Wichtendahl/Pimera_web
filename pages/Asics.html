@@ -12,30 +12,59 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../assets/iconos/favicom.png" type="image/x-icon">
         <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+        <link href="../css/Hover-master/css/hover-min.css" rel="stylesheet" media="all">
     </head>
     
-<body class="body">
-    <header class="header">
-        <nav class="header__nav">
-            <a href="../index.html">
+<body>
+    <Header>
+        <nav class=" navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
                 <img class="header__logo" src="../assets/iconos/logo_hardminers.png" alt="Este es el logo">
-            </a>
-            <ul class="header__nav__menu">
-                <li class="header__nav__menu__li"><a href="../index.html">Inicio</a></li>
-                <li class="header__nav__menu__li"><a href="./Graficas.html">Graficas</a></li>
-                <li class="header__nav__menu__li"><a href="#">Asics</a></li>
-                <li class="header__nav__menu__li"><a href="./Sobre nosotros.html">Sobre nosotros</a></li>
-                <li class="header__nav__menu__li"><a href="./Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+              </a>
+              <button class="nav__menu__hamburguesa navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="NavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link active hvr-underline-from-center text-secondary" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center text-secondary" aria-current="page" href="../pages/Graficas.html">Graficas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="#">Asics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="../pages/Sobre nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="../pages/Contacto.html">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+        </header>
                 
     <main>
-        <div class="main__asics__portada">
+        <div class="main__asics__imagen-portada">
+            <div class="gradiente" style="background-color: rgba(0, 0, 0, 0.6);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <h1 class="text-white mb-0 h-100">MANTENIMIENTO DE ASICS</h1>
+              </div>
+            </div>
+          </div>
+       
+          
+          <!-- <div class="main__asics__portada">
             <div>
                 <h1 class="main__asics__portada__titulo">MANTENIMIENTO DE ASICS</h1>
             </div>
-        </div>
+        </div> 
 
         <div class="main__asics">
             <img class="main__asics__imagen1" src="../assets/images/ASICS 3.png" alt=""> 
@@ -51,29 +80,54 @@
 
         <a href="">
             <i class="fa-brands fa-whatsapp whatsapp"></i>
-        </a>
+        </a>-->
 
     </main>              
         
-    <footer class="footer">
-        <div class="footer__redes">
-            <p class="footer__texto">SEGUINOS</p>
-            <a href="" target="_blank">
-                <i class="fa-brands fa-square-facebook facebook"></i>
-            </a>
-            <a href="" target="_blank">
-                <i class="fa-brands fa-square-twitter twitter"></i>
-            </a>
-            <a href="" target="_blank">
-                <i class="fa-brands fa-instagram instagram"></i>
-            </a>
-        </div>
-        <div>
-            <p class="footer__texto2">© 2022 HARD MAINERS · El mejor servicio para mineros</p>
-        </div>
-        <div>
-            <img class="footer__logo" src="../assets/iconos/logo_hardminers.png" alt="logo">
-        </div>    
+    <footer >
+        <footer class="bg-light text-center text-lg-start text-md-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-10 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">seguinos</h5>
+        
+                
+                  <div class="mb-0">
+                    <a href=""></a>
+                      <i class="fa-brands fa-square-facebook facebook"></i>
+                    </a>  
+                  
+                  <a href="">
+                      <i class="fa-brands fa-square-twitter twitter"></i>
+                    </a>
+                    <a href="" target="blank" >
+                      <i class="fa-brands fa-instagram instagram"></i>
+                  </a>
+                  
+                  </div>
+                  
+              </div>
+              <!--Grid column-->
+            <!--Grid column-->
+                  <div class="col-lg-2 col-md-6 mb-4 mb-md-0 p-3">
+                        <a href="#!" class="">
+                          <img class="footer__logo" src="../assets/iconos/logo_hardminers.png" alt="logo">
+                        </a>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->  
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                
+                <a class="text-dark list-unstyled" href="">© 2022 HARD MAINERS · El mejor servicio para mineros</a>
+              </div>
+              <!-- Copyright -->
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
