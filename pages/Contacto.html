@@ -12,36 +12,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/iconos/favicom.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <link href="../css/Hover-master/css/hover-min.css" rel="stylesheet" media="all">
 </head>
-<body class="body">
-    <header class="header">
-        <nav class="header__nav">
-            <a href="../index.html">
+<body>
+    <Header>
+        <nav class=" navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
                 <img class="header__logo" src="../assets/iconos/logo_hardminers.png" alt="Este es el logo">
-            </a>
-            <ul class="header__nav__menu">
-                <li class="header__nav__menu__li"><a href="../index.html">Inicio</a></li>
-                <li class="header__nav__menu__li"><a href="./Graficas.html">Graficas</a></li>
-                <li class="header__nav__menu__li"><a href="./Asics.html">Asics</a></li>
-                <li class="header__nav__menu__li"><a href="./Sobre nosotros.html">Sobre nosotros</a></li>
-                <li class="header__nav__menu__li"><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main__contacto">
-        <div class="main__contacto__portada">
-            <div>
-                <h1 class="main__contacto__portada__titulo">Contacto</h1>
+              </a>
+              <button class="nav__menu__hamburguesa navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="NavbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link active hvr-underline-from-center text-secondary" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="../pages/Graficas.html">Graficas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="../pages/Asics.html">Asics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="../pages/Sobre nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link hvr-underline-from-center text-secondary" href="#">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
             </div>
-        </div>    
+          </nav>
+    </Header>
+
+    <main>
+        <Div class="container">
+            <div class="row align-items-center  bg-dark">
+                <div class="">   
+                    <div>
+                        <h1 class="main__contacto__portada__titulo">Contacto</h1>
+                    </div>
         
-        <h1 class="main__contacto__titulo">Contacto</h1>
+            
+            
+            
+                    <div class="bg-warning col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0222700639174!2d-58.38331388517649!3d-34.60359836499797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf160fa369%3A0x69919ac89b34c387!2sAv.%20Corrientes%20%26%20Av.%209%20de%20Julio%2C%20C1054%20CABA!5e0!3m2!1ses-419!2sar!4v1665884390291!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>   
+            
+                    <form class="col-6">
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">No comparitremos tu email con nadie</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required placeholder="Escribanos su consulta aqui."></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recibir nuestras ofertas</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div> 
+            </div>
+        </div>
         
-        <section class="main__contacto__mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0222700639174!2d-58.38331388517649!3d-34.60359836499797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf160fa369%3A0x69919ac89b34c387!2sAv.%20Corrientes%20%26%20Av.%209%20de%20Julio%2C%20C1054%20CABA!5e0!3m2!1ses-419!2sar!4v1665884390291!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>   
-        <form class="main__contacto__formulario">
+        
+        
+        
+            <!--<form class="main__contacto__formulario">
             <div>
                 <input type="text" placeholder="Nombre*" required>
             </div>   
@@ -56,7 +101,7 @@
             <div>
                 <input type="submit" value="Enviar">
             </div>
-        </form>
+        </form>-->
         
             
             
@@ -65,26 +110,51 @@
             </a>  
     </main>
     
-    <footer class="footer">
-        <div class="footer__redes">
-            <p class="footer__texto">SEGUINOS</p>
-            <a href="" target="_blank">
-                <i class="fa-brands fa-square-facebook facebook"></i>
-            </a>
-            <a href="" target="_blank">
-                <i class="fa-brands fa-square-twitter twitter"></i>
-            </a>
-            <a href="" target="_blank">
-                <i class="fa-brands fa-instagram instagram"></i>
-            </a>
-        </div>
-        <div>
-            <p class="footer__texto2">© 2022 HARD MAINERS · El mejor servicio para mineros</p>
-        </div>
-        <div>
-            <img class="footer__logo" src="../assets/iconos/logo_hardminers.png" alt="logo">
-        </div>    
-    </footer>
+    <footer >
+        <footer class="bg-light text-center text-lg-start text-md-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-10 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">seguinos</h5>
+        
+                
+                  <div class="mb-0">
+                    <a href=""></a>
+                      <i class="fa-brands fa-square-facebook facebook"></i>
+                    </a>  
+                  
+                  <a href="">
+                      <i class="fa-brands fa-square-twitter twitter"></i>
+                    </a>
+                    <a href="" target="blank" >
+                      <i class="fa-brands fa-instagram instagram"></i>
+                  </a>
+                  
+                  </div>
+                  
+              </div>
+              <!--Grid column-->
+            <!--Grid column-->
+                  <div class="col-lg-2 col-md-6 mb-4 mb-md-0 p-3">
+                        <a href="#!" class="">
+                          <img class="footer__logo" src="../assets/iconos/logo_hardminers.png" alt="logo">
+                        </a>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->  
+              <!-- derechos de autor -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <a class="text-dark list-unstyled" href="../index.html">© 2022 HARD MAINERS · El mejor servicio para mineros</a>
+              </div>
+              <!-- derechos de autor -->  
+              
+      </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
