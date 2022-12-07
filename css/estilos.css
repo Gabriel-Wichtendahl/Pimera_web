@@ -1,0 +1,73 @@
+/*--Estilado del menu--*/
+header .nav__menu__hamburguesa {
+  background-color: #1cc9a1; }
+
+/*--Estilado del menu--*/
+/*--Estilado video de fondo--*/
+.index__main {
+  width: 100%; }
+  .index__main .video-2 {
+    width: 100%; }
+
+/*--Estilado video de fondo--*/
+/*.nav__menu__hamburguesa{
+    background-color: #1cc9a1;
+}
+
+.main{
+    width: 100%;
+}
+
+
+
+.video-2{
+  
+   width: 100%;
+}*/
+/*--Estilado pagina graficas--*/
+.main__graficas__imagen-portada {
+  background-image: url("../assets/images/imagen-portada-graficas.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center; }
+
+.gradiente {
+  height: 100vh; }
+
+/*--Estilado pagina graficas--*/
+/*--Estilado pagina asics--*/
+.main__asics__imagen-portada {
+  background-image: url("../assets/images/bitmain-1.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center; }
+
+.gradiente {
+  height: 100vh; }
+
+/*--Estilado pagina asics--*/
+/*--footer--*/
+.facebook {
+  color: #1cc9a1;
+  font-size: 9vh;
+  margin: 1vh;
+  margin-top: 13vh; }
+
+.instagram {
+  color: #1cc9a1;
+  font-size: 9vh;
+  margin: 1vh; }
+
+.twitter {
+  color: #1cc9a1;
+  font-size: 9vh;
+  margin: 1vh; }
+
+.footer__logo {
+  height: 10vh;
+  margin: 2vh;
+  margin-top: 15vh; }
+
+/*--footer--*/
+footer {
+  background-color: #1cc9a1; }
